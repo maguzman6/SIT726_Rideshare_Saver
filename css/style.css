@@ -241,16 +241,30 @@ nav.main-nav ul a:hover {
   color: var(--text-muted);
 }
 
+.hero-text-col {
+  padding-right: 24px !important;
+}
+
+.hero-img-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .hero-img-box {
+  width: 100%;
+  max-width: 520px;
   border-radius: var(--radius-lg);
   overflow: hidden;
-  box-shadow: var(--shadow-subtle);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.08);
   border: 4px solid #ffffff;
 }
 
 .hero-img {
   width: 100%;
   height: auto;
+  max-height: 480px;
+  object-fit: cover;
   display: block;
 }
 
