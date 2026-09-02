@@ -13,6 +13,8 @@ The objective is to build upon the Week 6 Marketing and Branding to create a sin
 
 Available at: https://maguzman6.github.io/SIT726_Rideshare_Saver/index.html
 
+Note: The landing page was developed using code just to use it in further tasks (Low and High fidelity prototypes).
+
 The landing page implements the following sections:
 
 | Section | Content |
