@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Primary Meta Tags -->
+  <title>RideShare Saver - Split the Ride, Save the Cash</title>
+  <meta name="title" content="RideShare Saver - Split the Ride, Save the Cash">
+  <meta name="description"
+    content="RideShare Saver connects Deakin University students commuting to campus to split fuel and parking costs safely.">
+  <meta name="keywords"
+    content="RideShare Saver, Deakin University, student carpool, Burwood, Waurn Ponds, Waterfront, SIT726">
+  <meta name="author" content="Team 12 - RideShare Saver (SIT726)">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+
+  <!-- Google Fonts & Material Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Materialize CSS v1.0.0 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="navbar-fixed">
+    <nav class="main-nav" role="navigation">
+      <div class="nav-wrapper container">
+        <a href="#hero" class="brand-logo" id="navLogo">
+          <img src="images/logo.jpg" alt="RideShare Saver Logo">
+          <span>RideShare<span class="brand-coral">Saver</span></span>
+        </a>
+
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#benefits">Benefits</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#testimonials">Community</a></li>
+          <li>
+            <a href="#waitlistModal" class="waves-effect waves-light btn btn-coral-nav modal-trigger">
+              Join Waitlist
+            </a>
+          </li>
+        </ul>
+
+        <a href="#" data-target="mobile-nav" class="sidenav-trigger right" aria-label="Open mobile menu">
+          <i class="material-icons">menu</i>
+        </a>
+      </div>
+    </nav>
+  </div>
+
+  <ul class="sidenav" id="mobile-nav">
+    <li class="sidenav-header">
+      <img src="images/logo.jpg" alt="RideShare Saver Logo">
+      <h5>RideShare<span class="brand-coral">Saver</span></h5>
+      <span>Deakin Student Carpooling</span>
+    </li>
+    <li><a href="#hero" class="sidenav-close"><i class="material-icons">home</i>Home</a></li>
+    <li><a href="#benefits" class="sidenav-close"><i class="material-icons">star_outline</i>Benefits</a></li>
+    <li><a href="#how-it-works" class="sidenav-close"><i class="material-icons">timeline</i>How It Works</a></li>
+    <li><a href="#testimonials" class="sidenav-close"><i class="material-icons">chat_bubble_outline</i>Community</a>
+    </li>
+    <li class="divider"></li>
+    <li style="padding: 16px 20px;">
+      <a href="#waitlistModal" class="waves-effect waves-light btn btn-coral modal-trigger sidenav-close"
+        style="width: 100%; text-align: center;">
+        Join Waitlist
+      </a>
+    </li>
+  </ul>
+
+
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="row valign-wrapper" style="flex-wrap: wrap;">
+
+        <h1 class="hero-title" id="mainHeadline">
+          RideShare Saver - <span class="brand-coral">Split the Ride</span>, Save the Cash.
+        </h1>
+
+        <p class="hero-subtitle" id="supportingHeadline">
+          Stop paying full price to drive to uni alone. Team up with your classmates on your route.
+        </p>
+
+        <div class="benefit-pitch-card" id="benefitSummary">
+          <p>
+            RideShare Saver matches students commuting to the same campus so they can split fuel and parking costs,
+            cutting the price of getting to class without giving up flexibility.
+          </p>
+        </div>
+
+        <div class="hero-cta-wrapper">
+          <a href="#waitlistModal" class="waves-effect waves-light btn-large btn-coral modal-trigger" id="heroCtaBtn">
+            Join the Waitlist
+          </a>
+        </div>
+      </div>
+
+      <div class="col s12 l6">
+        <div class="hero-img-box">
+          <img src="images/hero.jpg" alt="Two smiling Deakin students sharing a ride outside campus building"
+            class="responsive-img hero-img" id="heroShot">
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+  <section class="section-padding bg-white" id="benefits">
+    <div class="container">
+
+      <div class="section-heading-minimal">
+        <h2>Why Students Love RideShare Saver</h2>
+        <p>A simple, affordable way to get to campus without the high costs of driving solo.</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col s12 m4">
+          <div class="minimal-card">
+            <div class="icon-circle">
+              <i class="material-icons">savings</i>
+            </div>
+            <h3>Cut Commute Costs</h3>
+            <p>
+              Split petrol and campus parking permit fees directly with classmates. Cut your weekly travel expenses by
+              up to 75%.
+            </p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="minimal-card">
+            <div class="icon-circle">
+              <i class="material-icons">verified_user</i>
+            </div>
+            <h3>Verified Student Safety</h3>
+            <p>
+              Only registered Deakin students with authenticated <code>@deakin.edu.au</code> accounts can join, backed
+              by transparent peer ratings.
+            </p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="minimal-card">
+            <div class="icon-circle">
+              <i class="material-icons">schedule</i>
+            </div>
+            <h3>Timetable Matching</h3>
+            <p>
+              Match seamlessly by your class timetable and suburb corridor across Burwood, Waurn Ponds, and Waterfront
+              campuses.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section-padding bg-light" id="how-it-works">
+    <div class="container">
+
+      <div class="section-heading-minimal">
+        <h2>How It Works</h2>
+        <p>Get started in three simple steps.</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col s12 m4">
+          <div class="step-box">
+            <div class="step-num">01</div>
+            <h4>Sign Up</h4>
+            <p>Create your student profile using your Deakin email and set your campus location.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="step-box">
+            <div class="step-num">02</div>
+            <h4>Match Routes</h4>
+            <p>Find classmates travelling your route who share your lecture schedules.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="step-box">
+            <div class="step-num">03</div>
+            <h4>Ride & Split</h4>
+            <p>Carpool comfortably and split costs automatically without awkward cash exchanges.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section-padding bg-white" id="testimonials">
+    <div class="container">
+
+      <div class="section-heading-minimal">
+        <h2>What Students Say</h2>
+        <p>Real feedback from commuting students across Deakin campuses.</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col s12 m4">
+          <div class="testimonial-card-minimal">
+            <p class="quote-text">
+              "I drive from Ringwood to Burwood 4 days a week. Splitting fuel and parking saves me over $85 every week!"
+            </p>
+            <div class="user-meta">
+              <img src="images/avatar_sarah.jpg" alt="Sarah M." class="user-avatar">
+              <div>
+                <h5>Sarah M.</h5>
+                <span>Burwood Campus • Driver</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2: Rider -->
+        <div class="col s12 m4">
+          <div class="testimonial-card-minimal">
+            <p class="quote-text">
+              "Public transport took 1.5 hours from Lara. Now I ride with a fellow IT classmate in 25 minutes for less
+              than a bus fare."
+            </p>
+            <div class="user-meta">
+              <img src="images/avatar_liam.jpg" alt="Liam K." class="user-avatar">
+              <div>
+                <h5>Liam K.</h5>
+                <span>Waurn Ponds • Rider</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3: Postgrad -->
+        <div class="col s12 m4">
+          <div class="testimonial-card-minimal">
+            <p class="quote-text">
+              "Finding parking at Waterfront used to be a headache. Carpooling gives us carpool bays and great company
+              on the drive."
+            </p>
+            <div class="user-meta">
+              <img src="images/avatar_priya.jpg" alt="Priya R." class="user-avatar">
+              <div>
+                <h5>Priya R.</h5>
+                <span>Waterfront • Carpooler</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="cta-section">
+    <div class="container center-align">
+      <h2>Ready to Save on Your Uni Commute?</h2>
+      <p>Join the waitlist to secure your early access spot and first-ride credit.</p>
+      <a href="#waitlistModal" class="waves-effect waves-light btn-large btn-coral modal-trigger">
+        Join the Waitlist
+      </a>
+    </div>
+  </section>
+
+
+  <div id="waitlistModal" class="modal modal-minimal">
+    <div class="modal-content">
+
+      <button class="modal-close-icon modal-close" aria-label="Close modal">
+        <i class="material-icons">close</i>
+      </button>
+
+      <div id="waitlistFormView">
+        <h3>Join the Waitlist</h3>
+        <p class="subtitle">Get early access when RideShare Saver launches on your campus.</p>
+
+        <form id="waitlistForm">
+          <div class="input-field">
+            <input id="waitlistName" type="text" required placeholder="Full Name">
+          </div>
+
+          <div class="input-field">
+            <input id="waitlistEmail" type="email" required placeholder="Student Email (e.g. s226636976@deakin.edu.au)">
+          </div>
+
+          <div class="row" style="margin-bottom: 0;">
+            <div class="input-field col s12 m6">
+              <select id="waitlistCampus" class="browser-default minimal-select">
+                <option value="burwood" selected>Melbourne Burwood</option>
+                <option value="waurn-ponds">Geelong Waurn Ponds</option>
+                <option value="waterfront">Geelong Waterfront</option>
+              </select>
+            </div>
+
+            <div class="input-field col s12 m6">
+              <select id="waitlistRole" class="browser-default minimal-select">
+                <option value="both" selected>I can drive or ride (Both)</option>
+                <option value="driver">I have a car (Driver)</option>
+                <option value="rider">I need a ride (Rider)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="input-field">
+            <input id="waitlistSuburb" type="text" placeholder="Your Suburb (e.g. Ringwood, Box Hill, Lara)">
+          </div>
+
+          <button type="submit" class="waves-effect waves-light btn-large btn-coral" id="submitWaitlistBtn"
+            style="width: 100%; margin-top: 15px;">
+            Secure My Early Access
+          </button>
+        </form>
+      </div>
+
+      <div id="waitlistSuccessView" style="display: none; text-align: center; padding: 20px 0;">
+        <i class="material-icons success-icon">check_circle</i>
+        <h3>You're on the list!</h3>
+        <p class="subtitle">We've saved your priority spot for early access.</p>
+
+        <div class="ticket-box">
+          <span>Waitlist Number</span>
+          <strong id="waitlistPositionNumber">#142</strong>
+        </div>
+
+        <button type="button" class="btn-flat grey-text" id="resetWaitlistBtn" style="margin-top: 10px;">
+          Register another student
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+
+  <footer class="page-footer-minimal">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="footer-brand">
+            <img src="images/logo.jpg" alt="Logo">
+            <span>RideShare<span class="brand-coral">Saver</span></span>
+          </div>
+          <p class="footer-desc">
+            A peer-to-peer carpooling solution for Deakin University students.
+          </p>
+          <div class="academic-note">
+            SIT726 - Information Technology Innovations and Entrepreneurship
+          </div>
+        </div>
+
+        <div class="col s12 m6 right-align-on-med">
+          <h5 class="team-title">Team 12 (RideShare Saver)</h5>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 RideShare Saver. Deakin University.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
