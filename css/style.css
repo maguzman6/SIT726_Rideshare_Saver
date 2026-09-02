@@ -1,0 +1,599 @@
+:root {
+  --primary-coral: #FA7268;
+  --primary-coral-hover: #E85F55;
+  --primary-coral-light: #FFF0EE;
+
+  --secondary-teal: #004D5A;
+  --secondary-teal-light: #E6F5F7;
+
+  --dark-navy: #0F172A;
+  --text-main: #334155;
+  --text-muted: #64748B;
+
+  --bg-page: #FAFBFD;
+  --bg-white: #FFFFFF;
+  --border-color: #E2E8F0;
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-pill: 9999px;
+
+  --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.04);
+  --shadow-hover: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: var(--text-main);
+  background-color: var(--bg-page);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Outfit', sans-serif;
+  color: var(--dark-navy);
+  font-weight: 700;
+  margin: 0;
+}
+
+p {
+  line-height: 1.65;
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin: 0 0 12px;
+}
+
+.brand-coral {
+  color: var(--primary-coral);
+}
+
+/* ==========================================================================
+   Navigation Bar
+   ========================================================================== */
+.navbar-fixed {
+  z-index: 999;
+}
+
+nav.main-nav {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: none;
+  height: 70px;
+  line-height: 70px;
+}
+
+nav.main-nav .brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  font-size: 1.4rem;
+  color: var(--secondary-teal);
+  text-decoration: none;
+  height: 70px;
+}
+
+nav.main-nav .brand-logo img {
+  height: 40px;
+  width: 40px;
+  border-radius: var(--radius-sm);
+}
+
+nav.main-nav ul a {
+  color: var(--text-main);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0 16px;
+  transition: color 0.2s ease;
+}
+
+nav.main-nav ul a:hover {
+  color: var(--primary-coral);
+  background: transparent;
+}
+
+.btn-coral-nav {
+  background: var(--primary-coral) !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  border-radius: var(--radius-pill) !important;
+  padding: 0 20px !important;
+  height: 42px !important;
+  line-height: 42px !important;
+  box-shadow: none !important;
+  transition: background 0.2s ease !important;
+}
+
+.btn-coral-nav:hover {
+  background: var(--primary-coral-hover) !important;
+}
+
+.sidenav-trigger {
+  color: var(--secondary-teal) !important;
+  height: 70px;
+  line-height: 70px;
+}
+
+/* Sidenav */
+.sidenav-header {
+  padding: 24px 20px;
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.sidenav-header img {
+  width: 50px;
+  height: 50px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 8px;
+}
+
+.sidenav-header h5 {
+  font-size: 1.25rem;
+}
+
+.sidenav-header span {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
+.hero-section {
+  padding: 60px 0;
+  background: var(--bg-page);
+}
+
+.pill-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--secondary-teal-light);
+  color: var(--secondary-teal);
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  font-size: 0.82rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.hero-title {
+  font-size: 2.85rem;
+  line-height: 1.18;
+  margin-bottom: 16px;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--secondary-teal);
+  font-weight: 600;
+  margin-bottom: 20px;
+  line-height: 1.45;
+}
+
+.benefit-pitch-card {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-left: 4px solid var(--primary-coral);
+  padding: 14px 18px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 28px;
+}
+
+.benefit-pitch-card p {
+  color: var(--text-main);
+  font-size: 0.98rem;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.hero-cta-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.btn-coral {
+  background: var(--primary-coral) !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  border-radius: var(--radius-pill) !important;
+  padding: 0 32px !important;
+  height: 48px !important;
+  line-height: 48px !important;
+  box-shadow: none !important;
+  text-transform: none !important;
+  font-size: 1rem !important;
+  transition: all 0.2s ease !important;
+}
+
+.btn-coral:hover {
+  background: var(--primary-coral-hover) !important;
+  transform: translateY(-1px);
+}
+
+.cta-microcopy {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.hero-img-box {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-subtle);
+  border: 4px solid #ffffff;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ==========================================================================
+   Sections Common Styling
+   ========================================================================== */
+.section-padding {
+  padding: 70px 0;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.bg-light {
+  background-color: var(--bg-page);
+}
+
+.section-heading-minimal {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 45px;
+}
+
+.section-heading-minimal h2 {
+  font-size: 2.1rem;
+  margin-bottom: 10px;
+}
+
+.section-heading-minimal p {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   Benefits Section (Minimalist Cards)
+   ========================================================================== */
+.minimal-card {
+  background: var(--bg-page);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 30px 24px;
+  height: 100%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.minimal-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+  background: #ffffff;
+}
+
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--secondary-teal-light);
+  color: var(--secondary-teal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.minimal-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.minimal-card p {
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* ==========================================================================
+   How It Works (Steps)
+   ========================================================================== */
+.step-box {
+  text-align: center;
+  padding: 24px 18px;
+}
+
+.step-num {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--primary-coral);
+  margin-bottom: 12px;
+}
+
+.step-box h4 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.step-box p {
+  font-size: 0.92rem;
+  margin: 0;
+}
+
+/* ==========================================================================
+   Testimonials Section
+   ========================================================================== */
+.testimonial-card-minimal {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 26px 22px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.quote-text {
+  font-size: 0.98rem;
+  color: var(--text-main);
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.user-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-top: 1px solid var(--border-color);
+  padding-top: 16px;
+}
+
+.user-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-meta h5 {
+  font-size: 0.98rem;
+  margin: 0;
+}
+
+.user-meta span {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   Call To Action Banner (Bottom)
+   ========================================================================== */
+.cta-section {
+  background: var(--secondary-teal);
+  color: #ffffff;
+  padding: 65px 0;
+}
+
+.cta-section h2 {
+  color: #ffffff;
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+}
+
+.cta-section p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.1rem;
+  max-width: 500px;
+  margin: 0 auto 28px;
+}
+
+/* ==========================================================================
+   Waitlist Modal
+   ========================================================================== */
+.modal.modal-minimal {
+  max-width: 480px;
+  border-radius: var(--radius-md);
+  background: #ffffff;
+  padding: 24px;
+}
+
+.modal-close-icon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--text-muted);
+}
+
+.modal.modal-minimal h3 {
+  font-size: 1.5rem;
+  margin-bottom: 6px;
+}
+
+.modal.modal-minimal .subtitle {
+  font-size: 0.92rem;
+  margin-bottom: 20px;
+}
+
+.minimal-select {
+  border: 1px solid var(--border-color) !important;
+  border-radius: var(--radius-sm) !important;
+  padding: 8px 12px !important;
+  font-size: 0.92rem !important;
+  color: var(--text-main) !important;
+  margin-bottom: 14px;
+}
+
+.modal.modal-minimal input[type=text],
+.modal.modal-minimal input[type=email] {
+  border: 1px solid var(--border-color) !important;
+  border-radius: var(--radius-sm) !important;
+  padding: 0 14px !important;
+  height: 44px !important;
+  box-sizing: border-box !important;
+  font-size: 0.92rem !important;
+  margin-bottom: 14px !important;
+}
+
+.modal.modal-minimal input[type=text]:focus,
+.modal.modal-minimal input[type=email]:focus {
+  border-color: var(--primary-coral) !important;
+  box-shadow: none !important;
+}
+
+.success-icon {
+  font-size: 3rem;
+  color: #10B981;
+  margin-bottom: 12px;
+}
+
+.ticket-box {
+  background: var(--bg-page);
+  border: 1px dashed var(--secondary-teal);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+  margin: 16px 0;
+}
+
+.ticket-box span {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.ticket-box strong {
+  font-size: 2rem;
+  color: var(--primary-coral);
+  font-family: 'Outfit', sans-serif;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+footer.page-footer-minimal {
+  background-color: var(--dark-navy);
+  color: #94A3B8;
+  padding: 45px 0 25px;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.footer-brand img {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+}
+
+.footer-desc {
+  font-size: 0.9rem;
+  color: #94A3B8;
+  margin-bottom: 10px;
+}
+
+.academic-note {
+  font-size: 0.8rem;
+  color: #64748B;
+}
+
+.team-title {
+  color: #ffffff;
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+
+.team-members {
+  font-size: 0.82rem;
+  color: #94A3B8;
+  line-height: 1.7;
+}
+
+.right-align-on-med {
+  text-align: right;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin-top: 30px;
+  padding-top: 18px;
+  font-size: 0.82rem;
+  text-align: center;
+  color: #64748B;
+}
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+@media only screen and (max-width: 992px) {
+  .hero-title {
+    font-size: 2.3rem;
+  }
+
+  .hero-img-box {
+    margin-top: 30px;
+  }
+
+  .right-align-on-med {
+    text-align: left;
+    margin-top: 25px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-title {
+    font-size: 1.95rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.05rem;
+  }
+
+  .btn-coral {
+    width: 100%;
+    text-align: center;
+  }
+}
